@@ -45,20 +45,6 @@ console.log("Rating rendering")
   );
 }
 
-function Accordion () {
-  console.log("Accordion rendering")
-  return(
-    <div>
-      <h3>start</h3> 
-      <ul>
-        <li>1</li>
-        <li>2</li> 
-        <li>3</li>
-      </ul>
-    </div>
-  );
-}
-//
 function AccordionTitle () {
   console.log("AccordionTitle rendering")
   return <h3>start</h3>
