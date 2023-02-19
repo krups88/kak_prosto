@@ -9,28 +9,31 @@ function hello() {
  //hello();
 
 const App = () => {
+  console.log("App rendering")
   return (
     <div >
       <AppTitle/>
       <Rating/>
-      <Accordion/>
+      <AccordionTitle/>
+      <AccordionBody/>
       <Rating/>
     </div>
   );
 }
 
 function AppTitle() {
+  console.log("AppTitle rendering")
   return <>"This is App component"</>
 }
 
 function Star() {
-  console.log("Star rendered")
+  console.log("Star rendering")
   return <div>star</div>
 }
 
 
 function Rating () {
-
+console.log("Rating rendering")
   return(
     <div>
       <Star />
@@ -43,6 +46,7 @@ function Rating () {
 }
 
 function Accordion () {
+  console.log("Accordion rendering")
   return(
     <div>
       <h3>start</h3> 
@@ -54,6 +58,21 @@ function Accordion () {
     </div>
   );
 }
+//
+function AccordionTitle () {
+  console.log("AccordionTitle rendering")
+  return <h3>start</h3>
+}
 
+function AccordionBody () {
+  console.log("AccordionBody rendering")
+  return(
+    <ul>
+      <li>1</li>
+      <li>2</li> 
+      <li>3</li>
+    </ul>
+  );
+}
 
 export default App;
