@@ -2,22 +2,42 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+
+function hello() {
+  alert('Hello IT KAMASUTRA')
+}
+ //hello();
+
 const App = () => {
   return (
     <div >
-      This is APP component
+      <AppTitle/>
+      <Rating/>
+      <Accordion/>
+      <Rating/>
     </div>
   );
 }
 
+function AppTitle() {
+  return <>"This is App component"</>
+}
+
+function Star() {
+  console.log("Star rendered")
+  return <div>star</div>
+}
+
+
 function Rating () {
+
   return(
     <div>
-      <div>start</div>
-      <div>start</div>
-      <div>start</div>
-      <div>start</div>
-      <div>start</div>
+      <Star />
+      <Star />
+      <Star />
+      <Star />
+      <Star />
     </div>
   );
 }
@@ -25,10 +45,10 @@ function Rating () {
 function Accordion () {
   return(
     <div>
-      <h3>start</h3>
+      <h3>start</h3> 
       <ul>
         <li>1</li>
-        <li>2</li>
+        <li>2</li> 
         <li>3</li>
       </ul>
     </div>
