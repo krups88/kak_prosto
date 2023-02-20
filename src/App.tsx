@@ -3,7 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import './components/Accordion';
 import Accordion from './components/Accordion';
-
+ //import {Rating} from './components/Rating/Rating';
 
 
 function hello() {
@@ -30,7 +30,7 @@ function AppTitle() {
 
 function Star() {
   console.log("Star rendering")
-  return <div>star</div>
+  return <span>star</span>
 }
 
 
@@ -42,7 +42,7 @@ console.log("Rating rendering")
       <Star />
       <Star />
       <Star />
-      <Star />
+      <Star /> 
     </div>
   );
 }
